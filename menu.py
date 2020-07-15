@@ -1,7 +1,7 @@
 # Name:         Roger Silva Santos Aguiar
 # Function:     This application has several codes implemented for the code wars.
 # Initial date: July 13, 2020
-# Last update:  July 13, 2020
+# Last update:  July 15, 2020
 
 # Required modules
 import spin_words
@@ -19,9 +19,9 @@ class Menu:
               "will be spun and displayed in reverse order. Enter the following data:")
         sentence = input("\nPlease, enter a sentence without punctuation: ")
         print("Sentence typed: " + sentence)
-        spin = spin_words.SpinWords(sentence)
-        spunWords = spin.spinWords()
-        print("Spun words: " + spunWords)
+        spin = spin_words.SpinWords()
+        new_sentence = spin.spin_words(sentence)
+        print("{} is equal to {} ." .format(sentence, new_sentence))
         print("\n****************************************************************************************************************************************************************")
 
 if __name__ == '__main__':
